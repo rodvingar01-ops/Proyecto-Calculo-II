@@ -151,8 +151,16 @@ with tab_definida:
             F_b = F.subs(x, b_val)
             F_a = F.subs(x, a_val)
             
+            # Paso 1: Mostrar la antiderivada con sus límites
+            st.latex(r"\text{Paso 1: Antiderivada y límites de integración}")
             st.latex(f"\int_{{{a_val}}}^{{{b_val}}} ({sp.latex(f)}) dx = \left[ {sp.latex(F)} \\right]_{{{a_val}}}^{{{b_val}}}")
+            
+            # Paso 2: Sustitución de los límites superior e inferior
+            st.latex(r"\text{Paso 2: Evaluación en los límites } F(b) - F(a)")
             st.latex(f"= \left( {sp.latex(F_b)} \\right) - \left( {sp.latex(F_a)} \\right)")
+            
+            # Paso 3: Resultado numérico
+            st.latex(r"\text{Paso 3: Resultado final exacto y aproximado}")
             st.latex(f"= {sp.latex(resultado_exacto)} \\approx {resultado_exacto.evalf():.4f}")
             
             st.markdown("**2. Representación Gráfica e Interpretación:**")
