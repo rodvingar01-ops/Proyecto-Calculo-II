@@ -9,10 +9,10 @@ from sympy.parsing.sympy_parser import parse_expr, standard_transformations, imp
 # ==========================================
 st.set_page_config(page_title="Proyecto de Integrales", layout="wide")
 
-st.title("Modelado Matemático: Integrales Definidas e Indefinidas")
+st.title("Integrales Definidas e Indefinidas")
 st.markdown("""
 **Autor:** Rodvin Eduardo García Sutuj (090-21-16867)  
-**Asignatura:** Matemática Avanzada / Cálculo  
+**Asignatura:** Cálculo II
 """)
 
 # ==========================================
